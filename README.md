@@ -15,17 +15,17 @@ The rules of the L-system grammar are applied iteratively starting from the init
 Using L-systems for generating graphical images requires that the symbols in the model refer to elements of a drawing on the computer screen. For example, the program Fractint uses turtle graphics (similar to those in the Logo programming language) to produce screen images. It interprets each constant in an L-system model as a turtle command.
 
 ### Example: Fractal (binary) tree
-  variables : 0, 1
-  constants: [,]
-  axiom : 0
+  variables : 0, 1  
+  constants: [,]  
+  axiom : 0   
   rules : (1 → 11), (0 → 1[0]0)
 
    The shape is built by recursively feeding the axiom through the production rules. Each character of the input string is checked         against the rule list to determine which character or string to replace it with in the output string. In this example, a '1' in the     input string becomes '11' in the output string, while '[' remains the same. Applying this to the axiom of '0', we get:
 
-  axiom:	0
-  1st recursion:	1[0]0
-  2nd recursion:	11[1[0]0]1[0]0
-  3rd recursion:	1111[11[1[0]0]1[0]0]11[1[0]0]1[0]0
+  axiom:	0 
+  1st recursion:	1[0]0 
+  2nd recursion:	11[1[0]0]1[0]0  
+  3rd recursion:	1111[11[1[0]0]1[0]0]11[1[0]0]1[0]0  
   …
 
    We can see that this string quickly grows in size and complexity. This string can be drawn as an image by using turtle graphics,        where   each symbol is assigned a graphical operation for the turtle to perform. For example, in the sample above, the turtle may be    given the following instructions:
