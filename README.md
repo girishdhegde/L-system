@@ -43,6 +43,8 @@ clone this repository and execute the following commands:
           pip install -r requirements.txt 
    ##### to try the code:
           python L_system.py
+   ##### to try with custom L-system: Refer custom.py
+          python custom.py
   
 ## screen-shots
 <img src="./outputs/bt.png">
@@ -51,3 +53,4 @@ clone this repository and execute the following commands:
 <img src="./outputs/sc.png">
 <img src="./outputs/dc.png">
 <img src="./outputs/hc.png">
+<img src="./outputs/kc.png">
