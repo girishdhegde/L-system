@@ -41,7 +41,7 @@ Using L-systems for generating graphical images requires that the symbols in the
 clone this repository and execute the following commands:
    ##### to install requirements:
           pip install -r requirements.txt 
-   ##### to try the code:
+## Usage
           python L_system.py
    ##### to try with custom L-system: Refer custom.py
           python custom.py
